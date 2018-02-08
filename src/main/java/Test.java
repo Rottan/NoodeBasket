@@ -7,8 +7,7 @@ public class Test {
         basket.add(node);
         basket.add(node1);
         basket.add(node2);
-        basket.add(node2);
-        basket.add(node2);
+        basket.add(new Node ("kepucz",11));
         basket.printAll();
         basket.printHead();
         basket.printTail();

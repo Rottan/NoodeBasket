@@ -12,11 +12,13 @@ public class Basket {
       else if (tail == null){
           tail = node;
           tail.setNext(null);
+          head.setNext(tail);
           size++;
       }
       else {
           node.setNext(tail);
           tail = node;
+          head.setNext(tail);
           size++;
 
       }
@@ -31,8 +33,8 @@ public class Basket {
 
     public void printAll(){
       Node current = head;
-      System.out.println(current);
-      while (current != null){
+      System.out.println("łeb " +current);
+      while (current.getNext() != null){
           current = current.getNext();
         System.out.println(current);
 

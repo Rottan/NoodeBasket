@@ -1,7 +1,7 @@
 public class Node {
     private Node next = null;
-    String name;
-    double value;
+    private String name;
+    private double value;
 
 
     public Node( String name, double value) {
